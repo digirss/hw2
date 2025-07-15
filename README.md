@@ -1,76 +1,78 @@
-# Chrome Color Picker Extension
+# Chrome 顏色選取器擴充套件
 
-A simple and intuitive color picker extension for Chrome that allows you to pick colors from anywhere on your screen.
+一個簡單直觀的 Chrome 顏色選取器擴充套件，讓你可以從螢幕上任何地方選取顏色。
 
-## Features
+[English](README_EN.md) | 中文
 
-- 🎨 **Screen Color Picking**: Use the EyeDropper API to pick colors from any part of your screen
-- 📋 **Multiple Formats**: View colors in HEX, RGB, and HSL formats
-- 📱 **One-Click Copy**: Click any color format to copy it to your clipboard
-- 📚 **Color History**: Automatically saves your last 10 picked colors
-- 🔄 **Quick Reuse**: Click on any color in history to reselect it
+## 功能特色
 
-## Installation
+- 🎨 **螢幕顏色選取**：使用 EyeDropper API 從螢幕任何部分選取顏色
+- 📋 **多種格式**：支援 HEX、RGB、HSL 格式顯示
+- 📱 **一鍵複製**：點擊任何格式值即可複製到剪貼簿
+- 📚 **顏色歷史**：自動儲存最近選取的 10 種顏色
+- 🔄 **快速重用**：點擊歷史記錄中的顏色即可重新選擇
 
-### From Source
-1. Download or clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
-4. Click "Load unpacked" and select the extension folder
-5. The Color Picker icon will appear in your toolbar
+## 安裝方式
 
-## Usage
+### 從原始碼安裝
+1. 下載或複製這個儲存庫
+2. 開啟 Chrome 並前往 `chrome://extensions/`
+3. 在右上角啟用「開發人員模式」
+4. 點擊「載入未封裝項目」並選擇擴充套件資料夾
+5. 顏色選取器圖示將出現在工具列中
 
-1. Click the Color Picker icon in your Chrome toolbar
-2. Click "Pick Color from Screen" button
-3. Click anywhere on your screen to pick a color
-4. The color will be displayed with HEX, RGB, and HSL values
-5. Click any format value to copy it to your clipboard
-6. Access your color history in the bottom panel
+## 使用方法
 
-## Requirements
+1. 點擊 Chrome 工具列中的顏色選取器圖示
+2. 點擊「Pick Color from Screen」按鈕
+3. 點擊螢幕上任何地方選取顏色
+4. 顏色將以 HEX、RGB、HSL 格式顯示
+5. 點擊任何格式值即可複製到剪貼簿
+6. 在底部面板查看顏色歷史記錄
 
-- Chrome 95+ (for EyeDropper API support)
-- HTTPS websites recommended for best performance
+## 系統需求
 
-## Browser Support
+- Chrome 95+ (支援 EyeDropper API)
+- 建議在 HTTPS 網站上使用以獲得最佳效能
 
-This extension uses the modern EyeDropper API which is supported in:
+## 瀏覽器支援
+
+此擴充套件使用現代 EyeDropper API，支援：
 - Chrome 95+
 - Edge 95+
 
-## Files Structure
+## 檔案結構
 
 ```
-├── manifest.json       # Extension configuration
-├── popup.html         # Main interface
-├── popup.js           # Core functionality
-├── content.js         # Web page interaction
-├── icon16.png         # 16x16 icon
-├── icon48.png         # 48x48 icon
-├── icon128.png        # 128x128 icon
-└── README.md          # This file
+├── manifest.json       # 擴充套件設定檔
+├── popup.html         # 主要介面
+├── popup.js           # 核心功能
+├── content.js         # 網頁互動腳本
+├── icon16.png         # 16x16 圖示
+├── icon48.png         # 48x48 圖示
+├── icon128.png        # 128x128 圖示
+└── README.md          # 本檔案
 ```
 
-## Permissions
+## 權限說明
 
-- `activeTab`: Access current tab for color picking
-- `scripting`: Inject scripts for enhanced functionality
-- `storage`: Save color history locally
+- `activeTab`：存取當前分頁進行顏色選取
+- `scripting`：注入腳本以增強功能
+- `storage`：本地儲存顏色歷史
 
-## Development
+## 開發
 
-To modify or extend this extension:
+要修改或擴展此擴充套件：
 
-1. Make your changes to the source files
-2. Go to `chrome://extensions/`
-3. Click the refresh icon on the Color Picker extension
-4. Test your changes
+1. 修改原始檔案
+2. 前往 `chrome://extensions/`
+3. 點擊顏色選取器擴充套件的重新整理圖示
+4. 測試您的修改
 
-## License
+## 授權條款
 
-MIT License - feel free to use, modify, and distribute.
+MIT License - 歡迎使用、修改和分發。
 
-## Contributing
+## 貢獻
 
-Contributions are welcome! Please feel free to submit issues or pull requests.
+歡迎貢獻！請隨時提交問題或拉取請求。
